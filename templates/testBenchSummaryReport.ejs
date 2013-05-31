@@ -1,24 +1,17 @@
-<html>
-<head>
-  <title>iverilog GUI: Test Bench Summary Report</title>
-</head>
-<body>
-  <h1>Summary</h1>
-  <table>
-    <tr>
-      <th>File Name</th>
-      <th>iverilog Exit Code</th>
-      <th>Exit Code</th>
-      <th>Status</th>
+<h1>Summary</h1>
+<table class="summary">
+  <tr>
+    <th>File Name</th>
+    <th>iverilog Exit Code</th>
+    <th>Exit Code</th>
+    <th>Status</th>
+  </tr>
+  <% testBenches.forEach(function(testBench) { %>
+    <tr class="<%= testBench.simpleResult %>">
+      <td><a href="<%= testBench.reportFileName %>"><%= testBench.fileName %></a></td>
+      <td><%= testBench.iverilogExitCode %></td>
+      <td><%= testBench.exitCode %></td>
+      <td><%= testBench.result %></td>
     </tr>
-    <% testBenches.forEach(function(testBench) { %>
-      <tr class="<%= testBench.simpleResult %>">
-        <td><a href="<%= testBench.reportFileName %>"><%= testBench.fileName %></a></td>
-        <td><%= testBench.iverilogExitCode %></td>
-        <td><%= testBench.exitCode %></td>
-        <td><%= testBench.result %></td>
-      </tr>
-    <% }); %>
-  </table>
-</body>
-</html>
+  <% }); %>
+</table>

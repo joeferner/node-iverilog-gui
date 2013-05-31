@@ -1,1 +1,30 @@
-Hello
+<div class="banner <%= testBench.simpleResult %>"><%= testBench.result %></div>
+
+<h1><%= testBench.fileName %></h1>
+
+<table class="test-bench-results">
+  <tr>
+    <th>Result</th>
+    <td class="<%= testBench.simpleResult %>"><%= testBench.result %></td>
+  </tr>
+  <tr>
+    <th>iverilog Exit Code</th>
+    <td><%= testBench.iverilogExitCode %></td>
+  </tr>
+  <tr>
+    <th>Test Bench Exit Code</th>
+    <td><%= testBench.exitCode %></td>
+  </tr>
+</table>
+
+<h2>Icarus Verilog Output</h2>
+<pre class="output"><%= testBench.iverilogOutputHtml %></pre>
+
+<h2>Test Bench Output</h2>
+<pre class="output"><%- testBench.outputHtml %></pre>
+
+<div style="display: none;">
+<%- JSON.stringify(testBench, null, '  ') %>
+</div>
+
+<div class="banner <%= testBench.simpleResult %>"><%= testBench.result %></div>

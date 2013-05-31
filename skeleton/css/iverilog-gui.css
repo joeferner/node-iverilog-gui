@@ -1,5 +1,49 @@
+body {
+  padding-top: 60px;
+}
 
+table.summary {
+  border-collapse: collapse;
+}
+
+table.summary,
+table.summary th,
+table.summary td {
+  border: 1px solid black;
+}
+
+table.summary td {
+  padding: 5px;
+}
 
 tr.fail {
   background-color: #ffacb3;
+}
+
+.test-bench-results th {
+  text-align: right;
+}
+
+.test-bench-results th {
+  padding-right: 5px;
+}
+
+.test-bench-results td.fail {
+  background-color: #ffacb3;
+}
+
+.output .error {
+  background-color: #ffacb3;
+}
+
+div.banner {
+  text-align: center;
+}
+
+div.banner.fail {
+  background-color: #ffacb3;
+}
+
+div.banner.success {
+  background-color: #79ff88;
 }

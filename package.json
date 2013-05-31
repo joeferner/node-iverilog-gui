@@ -1,7 +1,7 @@
 {
   "name": "iverilog-gui",
   "version": "0.0.1",
-  "description": "GUI for iverilog",
+  "description": "Icarus Verilog GUI",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/nodeunit test"

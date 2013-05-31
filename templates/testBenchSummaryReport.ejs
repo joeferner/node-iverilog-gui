@@ -12,7 +12,7 @@
       <th>Status</th>
     </tr>
     <% testBenches.forEach(function(testBench) { %>
-      <tr>
+      <tr class="<%= testBench.simpleResult %>">
         <td><a href="<%= testBench.reportFileName %>"><%= testBench.fileName %></a></td>
         <td><%= testBench.iverilogExitCode %></td>
         <td><%= testBench.exitCode %></td>

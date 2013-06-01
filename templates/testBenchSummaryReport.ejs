@@ -8,7 +8,7 @@
   </tr>
   <% testBenches.forEach(function(testBench) { %>
     <tr class="<%= testBench.simpleResult %>">
-      <td><a href="<%= testBench.reportFileName %>"><%= testBench.fileName %></a></td>
+      <td><a href="<%= testBench.reportRelativeFileName %>"><%= testBench.fileName %></a></td>
       <td><%= testBench.iverilogExitCode %></td>
       <td><%= testBench.exitCode %></td>
       <td><%= testBench.result %></td>

@@ -11,6 +11,9 @@ var args = optimist
   .options('watch', {
     describe: 'Watch for file changes and re-run.'
   })
+  .options('server', {
+    describe: 'Run a web server to continuously monitor build status.'
+  })
   .argv;
 
 if (args.help) {

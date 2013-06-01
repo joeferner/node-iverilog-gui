@@ -2,6 +2,26 @@ body {
   padding-top: 60px;
 }
 
+#loading {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 90px;
+  font-weight: bold;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #00b500;
+  border: 1px solid #8e8e8e;
+  padding: 10px;
+  z-index: 99999;
+}
+
+#loading .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 table.summary {
   border-collapse: collapse;
 }

@@ -56,6 +56,10 @@ tr.fail {
   background-color: #ffacb3;
 }
 
+.output .success {
+  background-color: #79ff88;
+}
+
 div.banner {
   text-align: center;
 }

@@ -71,3 +71,9 @@ div.banner.fail {
 div.banner.success {
   background-color: #79ff88;
 }
+
+a.lineNumber {
+  width: 30px;
+  display: inline-block;
+  text-align: right;
+}

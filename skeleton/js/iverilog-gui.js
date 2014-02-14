@@ -17,7 +17,7 @@
     socket.on('buildComplete', function() {
       console.log('buildComplete');
       $('#loading').hide();
-      document.location.href = document.location.href;
+      document.location.reload();
     });
   });
 })();

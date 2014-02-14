@@ -4,7 +4,7 @@ body {
 
 #loading {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 5px;
   right: 5px;
   width: 90px;

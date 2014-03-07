@@ -8,6 +8,9 @@ var optimist = require('optimist');
 var args = optimist
   .alias('h', 'help')
   .alias('h', '?')
+  .options('include', {
+    describe: 'The pattern to include.'
+  })
   .options('watch', {
     describe: 'Watch for file changes and re-run.'
   })
